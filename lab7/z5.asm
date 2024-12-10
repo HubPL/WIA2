@@ -28,9 +28,9 @@ mov dl, 39
 int 10h
 
 mov ah, 09h
-mov al, 3		; what char to write
-mov bl, 0F4h		; color of char (change to 0F4h)
-mov cx, 1		; number of repetitions
+mov al, 3		
+mov bl, 0F4h		
+mov cx, 1		
 int 10h
 jmp end
 
@@ -44,9 +44,9 @@ mov dl, 40
 int 10h
 
 mov ah, 09h
-mov al, 5		; what char to write
-mov bl, 04h		; color of char
-mov cx, 1		; number of repetitions
+mov al, 5		
+mov bl, 04h		
+mov cx, 1		
 int 10h
 jmp end
 
@@ -60,9 +60,9 @@ mov dl, 40
 int 10h
 
 mov ah, 09h
-mov al, 6		; what char to write
-mov bl, 0F0h		; color of char (change to 0F0h)
-mov cx, 1		; number of repetitions
+mov al, 6		
+mov bl, 0F0h		
+mov cx, 1		
 int 10h
 jmp end
 
