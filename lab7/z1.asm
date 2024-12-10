@@ -1,20 +1,20 @@
 org 100h
 
-mov CX, 12          ; Ustaw licznik powtórzeń na 12
+mov CX, 12          
 
 druk:
-    mov AH, 02h      ; Funkcja wyświetlania pojedynczego znaku
-    mov DL, 'H'      ; Zapisz znak 'H' w rejestrze DL
-    int 21h          ; Wywołanie funkcji DOS do wypisania znaku
+    mov AH, 02h     
+    mov DL, 'H'     
+    int 21h          
 
-    ; Przejście do nowej linii (powrót karetki + nowa linia)
-    mov DL, 0Dh      ; Powrót karetki (Carriage Return) - CR
+   
+    mov DL, 0Dh     
     int 21h
 
-    mov DL, 0Ah      ; Nowa linia (Line Feed) - LF
+    mov DL, 0Ah     
     int 21h
 
-    loop druk        ; Zmniejsz CX i powtórz, dopóki CX nie stanie się zerem
+    loop druk       
 
-mov AH, 00h          ; Zakończ program
+mov AH, 00h        
 int 21h
