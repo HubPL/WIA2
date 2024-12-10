@@ -8,7 +8,7 @@ int 10h
 
 mov ah, 09h
 mov al, [index+5]
-mov bl, 0Fh       ; biały kolor
+mov bl, 0Fh       
 int 10h
 
 mov ah, 00h
