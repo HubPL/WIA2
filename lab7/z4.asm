@@ -14,4 +14,4 @@ int 10h
 mov ah, 00h
 int 21h
 
-index db 's29870$'
+index db 's30577$'
